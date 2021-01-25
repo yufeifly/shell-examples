@@ -92,30 +92,31 @@
 #printf "hello, shell\n"
 #
 #if [ $(ps -ef | grep -c "ssh") -gt 1 ]; then echo "true"; fi
-#
+
+# loop
 #for loop in 1 2 3 4 5
 #do 
 #	echo "the value is: $loop"
 #done
 #
 #int=1
-#while(( $int<=5 ))
+#while(( int<=5 ))
 #do 
 #	echo $int
 #	let "int++"
 #done
 
-#echo '按下 q or <CTRL-D> 退出'
-#echo -n '输入你最喜欢的网站名: '
-#q="q"
-#while read FILM
-#do
-#	if [[ $FILM = $q ]]
-#	then 
-#		break
-#	fi
-#    echo "是的！$FILM 是一个好网站"
-#done
+echo '按下 q or <CTRL-D> 退出'
+echo -n '输入你最喜欢的网站名: '
+while read FILM
+do
+	if [ "$FILM" = "q" ]
+	#if test $FILM = "q"
+	then 
+		break
+	fi
+    echo "是的！$FILM 是一个好网站"
+done
 
 #demoFun() {
 #	echo "this is my first shell function"
