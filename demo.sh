@@ -2,14 +2,14 @@
 
 
 # get string length
-string="abcd"
-echo ${#string}
-# get substring
-echo ${string:1:3}
-
-# search substring
-str2="runoob is a great site"
-echo `expr index "$str2" i`
+#string="abcd"
+#echo ${#string}
+## get substring
+#echo ${string:1:3}
+#
+## search substring
+#str2="runoob is a great site"
+#echo `expr index "$str2" i`
 
 #array_name=("value0", "value1", "value2", "value3")
 
@@ -18,6 +18,14 @@ echo `expr index "$str2" i`
 #echo "the elems are: ${array_name[*]}"
 #echo "the amount of array: ${#array_name[*]}"
 
+# ./demo 1 2 3
+#echo "shell pass params"
+#echo "the file to be executed: $0"
+#echo "the first param: $1"
+#echo "the second param: $2"
+#echo "the third param: $3"
+#echo "the num of params: $#"
+#echo "all params: $*"
 
 #my_array=(A B "C" D)
 #
@@ -25,12 +33,6 @@ echo `expr index "$str2" i`
 #echo "第二个元素为: ${my_array[1]}"
 #echo "第三个元素为: ${my_array[2]}"
 #echo "第四个元素为: ${my_array[3]}"
-
-#echo "shell pass params"
-#echo "the file to be executed: $0"
-#echo "the first param: $1"
-#echo "the second param: $2"
-#echo "the third param: $3"
 
 #val=`expr 2 + 2`
 #echo "the sum of the two number: ${val}"
