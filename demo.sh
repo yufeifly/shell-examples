@@ -1,4 +1,16 @@
 #!/bin/bash
+
+
+# get string length
+string="abcd"
+echo ${#string}
+# get substring
+echo ${string:1:3}
+
+# search substring
+str2="runoob is a great site"
+echo `expr index "$str2" i`
+
 #array_name=("value0", "value1", "value2", "value3")
 
 #echo "fuck you: ${array_name[0]}"
@@ -91,14 +103,36 @@
 #	let "int++"
 #done
 
-echo '按下 <CTRL-D> 退出'
-echo -n '输入你最喜欢的网站名: '
-q="q"
-while read FILM
-do
-    echo "是的！$FILM 是一个好网站"
-	if [[ $FILM = $q ]]
-	then 
-		break
-	fi
-done
+#echo '按下 q or <CTRL-D> 退出'
+#echo -n '输入你最喜欢的网站名: '
+#q="q"
+#while read FILM
+#do
+#	if [[ $FILM = $q ]]
+#	then 
+#		break
+#	fi
+#    echo "是的！$FILM 是一个好网站"
+#done
+
+#demoFun() {
+#	echo "this is my first shell function"
+#}
+#
+#echo "---start function---"
+#demoFun
+#echo "---end function---"
+
+#funWithReturn() {
+#	echo "this function adds two numbers"
+#	echo "input the first number:"
+#	read aNum
+#	echo "input the second number:"
+#	read anotherNum
+#	return $(($aNum+$anotherNum))
+#}
+#
+#funWithReturn
+#echo "the sum of the two number is: $?"
+
+
